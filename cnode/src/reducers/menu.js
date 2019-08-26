@@ -1,4 +1,4 @@
-import { SHOWDRAWER, HIDEDRAWER } from '../constants/menu'
+import { SHOWDRAWER, HIDEDRAWER, CHANGECATG } from '../constants/menu'
 
 const MENU_STATE = {
   catgData: [
@@ -19,6 +19,8 @@ export default function menu(prestate = MENU_STATE, action) {
       return { ...prestate, showDrawer: true }
     case HIDEDRAWER:
       return { ...prestate, showDrawer: false }
+    case CHANGECATG:
+      return { ...prestate, currentCatg: action.currentCatg }
     default:
       return { ...prestate }
   }
