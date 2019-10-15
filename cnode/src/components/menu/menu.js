@@ -3,6 +3,7 @@ import { View, Text, Button, Image } from '@tarojs/components'
 import { connect } from '@tarojs/redux'
 import { SHOWDRAWER } from '../../../dist/constants/menu'
 import { showDrawer } from '../../actions/menu'
+import { AtDrawer } from 'taro-ui'
 
 import './menu.less'
 
@@ -25,6 +26,7 @@ class Menu extends Component {
   render() {
     return (
       <View className="topics-menu">
+        <AtDrawer style="position:absolute;" />
         <Image
           className="image menu"
           src={require('../../assets/img/menu-bars.png')}

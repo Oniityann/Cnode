@@ -1,8 +1,12 @@
 .topics-menu {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 88px;
+
+  .topics-drawer {
+    position: absolute;
+  }
 
   .image {
     width: 36px;
@@ -10,17 +14,11 @@
   }
 
   // topics-menu 上面第一个标签
-  .image:nth-child(1) {
+  .image:nth-child(2) {
     margin-left: 40px;
   }
 
-  .image:nth-child(3) {
+  .image:nth-child(4) {
     margin-right: 40px;
-  }
-
-  .title {
-    font-family: PingFangSC-Medium;
-    font-size: 34px;
-    color: rgba(61, 61, 61, 1);
   }
 }
